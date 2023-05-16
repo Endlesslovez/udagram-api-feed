@@ -14,7 +14,7 @@ script:
   ## tagging
   - docker tag udagram-api-feed nguyenxuanminh1/udagram-api-feed:v1
 after_script:
-  ## push
+  ## push1
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" password-stdin
   - docker push nguyenxuanminh1/udagram-api-feed:v1
   - echo "Success build docker hub"
